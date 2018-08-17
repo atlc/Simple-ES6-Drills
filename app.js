@@ -7,8 +7,16 @@ $(document).ready(function(){
     favoriteMovie('Leprechaun 6: Back 2 tha Hood', 'Andrew');
 
      let getFirstName = (name) => {
-
+        return name.split(' ')[0];
      }
 
-     let getFirstNameConcise = name => console.log();
+     console.log(`getFirstName: ${getFirstName('Andrew Cartwright')}`);
+
+     let getFirstNameConcise = name => name.split(' ')[0];
+
+     console.log(`getFirstNameConcise: ${getFirstNameConcise('Andrew Cartwright')}`);
+
+     let doMath = (num1, num2) => ({ power: num1 ** num2, product: num1 * num2 });
+
+     console.log(`Power: ${doMath(2,6).power}\nProduct: ${doMath(2,6).product}`);
 });
