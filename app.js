@@ -19,4 +19,24 @@ $(document).ready(function(){
      let doMath = (num1, num2) => ({ power: num1 ** num2, product: num1 * num2 });
 
      console.log(`Power: ${doMath(2,6).power}\nProduct: ${doMath(2,6).product}`);
+
+
+     function biography(name, location, favFood) {
+        console.log(`Name: ${name}\nLocation: ${location}\nFavorite food: ${favFood}`);
+     }
+
+     let me = ['Andrew', 'Birmingham', 'Nashville Hot Chicken'];
+     biography(...me);
+
+
+     function doSomeWork(cats) {
+        let newString = [...cats];
+        newString.forEach((char) => {
+            console.log(char);
+        });
+     }
+
+     let andrew = 'Andrew';
+     doSomeWork(andrew);
+
 });
